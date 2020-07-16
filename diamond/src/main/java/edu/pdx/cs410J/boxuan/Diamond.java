@@ -7,10 +7,26 @@ package edu.pdx.cs410J.boxuan;
  * class (and its tests).
  */
 public class Diamond {
-                                                                                    
+
+
 
   public static void main(String[] args) {
-    System.err.println("Missing command line arguments");
-    System.exit(1);
+    if(args.length > 1) {
+      System.err.println("Wrong number of input.");
+      System.exit(1);
+    }
+    //i == 5 A - E
+    String arc = args[0];
+    int arc_len = arc.length();
+    if(arc_len != 0) {
+      System.err.println("Wrong format");
+      System.exit(1);
+    }
+
+
+
+    for(int i = 0; i < length; i++){
+
+    }
   }
 }
